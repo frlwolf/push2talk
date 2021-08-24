@@ -3,20 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E90E3989A04ED4BCD1D2CA9 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E56384FDE63B7F762541 /* RootCoordinator.swift */; };
-		1E90E5465592D173E2955485 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E81498FDC3A913ADEF5E /* View.swift */; };
-		1E90E8E155D7F02647EBCDC7 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EAAF181B0D113324395E /* Window.swift */; };
+		1E90E0FB929461FC87DE31F8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EBB2C164A390CF4AF3A1 /* View.swift */; };
+		1E90E12D2027930A0C9FFE28 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EA634B9E2E55A0FD9745 /* RootInteractor.swift */; };
+		1E90E1B35086E79D8B6CAAE2 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB9C09473455029B8A93 /* MessageSender.swift */; };
+		1E90E62A09C6883988951389 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EEAB03422F519DF6E945 /* Message.swift */; };
+		1E90E6B8FF0DC2A47C15228A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EC5386F329F0B8F14C48 /* RootViewController.swift */; };
+		1E90E7273EDDBFEBF2383A00 /* WebSocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */; };
+		1E90E78FB1E147DAE7B7D704 /* MessageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */; };
+		1E90E7CCE900C4C892E0AE2F /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB077F3F13DD43D0D542 /* RootCoordinator.swift */; };
+		1E90EA68BCA073E0175689FE /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E2E79430A32E71AB1EB6 /* Window.swift */; };
+		1E90EB3A19608C2277785CCC /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EDECDD710D00F199DFC1 /* AudioSession.swift */; };
+		1E90ED178E91574C617DC295 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E5D9594E219B62024647 /* SessionDescription.swift */; };
+		1E90ED4DD039B047BAFB8836 /* PeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */; };
+		1E90EDD16943475CE314E0A0 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED72C993EF7C8A95E7D0 /* IceCandidate.swift */; };
+		1E90EDF39972D1974E210041 /* DataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E311443D906A8D0ADB56 /* DataSession.swift */; };
+		1E90EF29951607715101084C /* PeerConnecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */; };
+		1E90EFF3F21018947AA8BC57 /* ConnectionRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */; };
 		27623D6826D4145C00095CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D6726D4145C00095CB0 /* AppDelegate.swift */; };
 		27623D6A26D4145C00095CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D6926D4145C00095CB0 /* SceneDelegate.swift */; };
-		27623D6C26D4145C00095CB0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D6B26D4145C00095CB0 /* RootViewController.swift */; };
 		27623D7126D4145D00095CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27623D7026D4145D00095CB0 /* Assets.xcassets */; };
 		27623D7426D4145D00095CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27623D7226D4145D00095CB0 /* LaunchScreen.storyboard */; };
 		27623D7F26D4145D00095CB0 /* Push2TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D7E26D4145D00095CB0 /* Push2TalkTests.swift */; };
 		27623D8A26D4145D00095CB0 /* Push2TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D8926D4145D00095CB0 /* Push2TalkUITests.swift */; };
+		47A68A99037D4D351756E3D0 /* Pods_Push2Talk_Push2TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7BA9A9987908F1F5456A62 /* Pods_Push2Talk_Push2TalkUITests.framework */; };
+		5718DD2FBAB1504D70FA3331 /* Pods_Push2Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2114864B59621F804B5D5D /* Pods_Push2Talk.framework */; };
+		9E91E1777BB9AC6E50878EE5 /* Pods_Push2TalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A591AFB7D5AB16E41CC9FD0 /* Pods_Push2TalkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +52,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E90E56384FDE63B7F762541 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		1E90E81498FDC3A913ADEF5E /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		1E90EAAF181B0D113324395E /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		05D24D631A9ECBCBC13D8CB1 /* Pods-Push2Talk-Push2TalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2Talk-Push2TalkUITests.release.xcconfig"; path = "Target Support Files/Pods-Push2Talk-Push2TalkUITests/Pods-Push2Talk-Push2TalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0C2114864B59621F804B5D5D /* Pods_Push2Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push2Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5A7D4418DAD2B17F93F2E5 /* Pods-Push2Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2Talk.debug.xcconfig"; path = "Target Support Files/Pods-Push2Talk/Pods-Push2Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConnecting.swift; sourceTree = "<group>"; };
+		1E90E2E79430A32E71AB1EB6 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		1E90E311443D906A8D0ADB56 /* DataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSession.swift; sourceTree = "<group>"; };
+		1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnector.swift; sourceTree = "<group>"; };
+		1E90E5D9594E219B62024647 /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		1E90EA634B9E2E55A0FD9745 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		1E90EB077F3F13DD43D0D542 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		1E90EB9C09473455029B8A93 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		1E90EBB2C164A390CF4AF3A1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConnection.swift; sourceTree = "<group>"; };
+		1E90EC5386F329F0B8F14C48 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRelay.swift; sourceTree = "<group>"; };
+		1E90ED72C993EF7C8A95E7D0 /* IceCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		1E90EDECDD710D00F199DFC1 /* AudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSession.swift; sourceTree = "<group>"; };
+		1E90EEAB03422F519DF6E945 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReceiver.swift; sourceTree = "<group>"; };
 		27623D6426D4145C00095CB0 /* Push2Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push2Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27623D6726D4145C00095CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27623D6926D4145C00095CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27623D6B26D4145C00095CB0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		27623D7026D4145D00095CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27623D7326D4145D00095CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27623D7526D4145D00095CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +83,13 @@
 		27623D8526D4145D00095CB0 /* Push2TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Push2TalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27623D8926D4145D00095CB0 /* Push2TalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push2TalkUITests.swift; sourceTree = "<group>"; };
 		27623D8B26D4145D00095CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E400AA26D5570C00C3226C /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		2A591AFB7D5AB16E41CC9FD0 /* Pods_Push2TalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push2TalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7BA9A9987908F1F5456A62 /* Pods_Push2Talk_Push2TalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push2Talk_Push2TalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC32A1F903C2582DF0B918C /* Pods-Push2Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2Talk.release.xcconfig"; path = "Target Support Files/Pods-Push2Talk/Pods-Push2Talk.release.xcconfig"; sourceTree = "<group>"; };
+		80DCCCDE99C9747F52708E5F /* Pods-Push2TalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2TalkTests.release.xcconfig"; path = "Target Support Files/Pods-Push2TalkTests/Pods-Push2TalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		8EAE2F8C79B3CB995B0F141A /* Pods-Push2Talk-Push2TalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2Talk-Push2TalkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Push2Talk-Push2TalkUITests/Pods-Push2Talk-Push2TalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A737A58D2637D4E412B0FE40 /* Pods-Push2TalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2TalkTests.debug.xcconfig"; path = "Target Support Files/Pods-Push2TalkTests/Pods-Push2TalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5718DD2FBAB1504D70FA3331 /* Pods_Push2Talk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E91E1777BB9AC6E50878EE5 /* Pods_Push2TalkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +113,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A68A99037D4D351756E3D0 /* Pods_Push2Talk_Push2TalkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E90E3EAE4B8A24DEFD7E60E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1E90EB077F3F13DD43D0D542 /* RootCoordinator.swift */,
+				1E90EA634B9E2E55A0FD9745 /* RootInteractor.swift */,
+				1E90EC5386F329F0B8F14C48 /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		1E90E7B4011C8BB67E0498E5 /* Auxiliary Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E90EBB2C164A390CF4AF3A1 /* View.swift */,
+				1E90E2E79430A32E71AB1EB6 /* Window.swift */,
+			);
+			path = "Auxiliary Protocols";
+			sourceTree = "<group>";
+		};
+		1E90EBF2784A9C00EDB1FAF6 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */,
+				1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */,
+				1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */,
+				1E90EEAB03422F519DF6E945 /* Message.swift */,
+				1E90EB9C09473455029B8A93 /* MessageSender.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		1E90EC9625EB97C6278112E7 /* Web RTC */ = {
+			isa = PBXGroup;
+			children = (
+				1E90ED72C993EF7C8A95E7D0 /* IceCandidate.swift */,
+				1E90E5D9594E219B62024647 /* SessionDescription.swift */,
+				1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */,
+				1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */,
+				1E90EDECDD710D00F199DFC1 /* AudioSession.swift */,
+				1E90E311443D906A8D0ADB56 /* DataSession.swift */,
+			);
+			path = "Web RTC";
+			sourceTree = "<group>";
+		};
 		27623D5B26D4145C00095CB0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +171,8 @@
 				27623D7D26D4145D00095CB0 /* Push2TalkTests */,
 				27623D8826D4145D00095CB0 /* Push2TalkUITests */,
 				27623D6526D4145C00095CB0 /* Products */,
+				EA066B218809174D65AC35C1 /* Pods */,
+				A204A93AF1A7D1A6EDAD0956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,13 +191,13 @@
 			children = (
 				27623D6726D4145C00095CB0 /* AppDelegate.swift */,
 				27623D6926D4145C00095CB0 /* SceneDelegate.swift */,
-				27623D6B26D4145C00095CB0 /* RootViewController.swift */,
 				27623D7026D4145D00095CB0 /* Assets.xcassets */,
 				27623D7226D4145D00095CB0 /* LaunchScreen.storyboard */,
 				27623D7526D4145D00095CB0 /* Info.plist */,
-				1E90E56384FDE63B7F762541 /* RootCoordinator.swift */,
-				1E90EAAF181B0D113324395E /* Window.swift */,
-				1E90E81498FDC3A913ADEF5E /* View.swift */,
+				1E90EBF2784A9C00EDB1FAF6 /* Messaging */,
+				1E90EC9625EB97C6278112E7 /* Web RTC */,
+				1E90E3EAE4B8A24DEFD7E60E /* Root */,
+				1E90E7B4011C8BB67E0498E5 /* Auxiliary Protocols */,
 			);
 			path = Push2Talk;
 			sourceTree = "<group>";
@@ -134,6 +220,30 @@
 			path = Push2TalkUITests;
 			sourceTree = "<group>";
 		};
+		A204A93AF1A7D1A6EDAD0956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C2114864B59621F804B5D5D /* Pods_Push2Talk.framework */,
+				27E400AA26D5570C00C3226C /* WebRTC.framework */,
+				4A7BA9A9987908F1F5456A62 /* Pods_Push2Talk_Push2TalkUITests.framework */,
+				2A591AFB7D5AB16E41CC9FD0 /* Pods_Push2TalkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA066B218809174D65AC35C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F5A7D4418DAD2B17F93F2E5 /* Pods-Push2Talk.debug.xcconfig */,
+				6BC32A1F903C2582DF0B918C /* Pods-Push2Talk.release.xcconfig */,
+				8EAE2F8C79B3CB995B0F141A /* Pods-Push2Talk-Push2TalkUITests.debug.xcconfig */,
+				05D24D631A9ECBCBC13D8CB1 /* Pods-Push2Talk-Push2TalkUITests.release.xcconfig */,
+				A737A58D2637D4E412B0FE40 /* Pods-Push2TalkTests.debug.xcconfig */,
+				80DCCCDE99C9747F52708E5F /* Pods-Push2TalkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27623D8E26D4145D00095CB0 /* Build configuration list for PBXNativeTarget "Push2Talk" */;
 			buildPhases = (
+				82228FF2326FADD600D6952E /* [CP] Check Pods Manifest.lock */,
 				27623D6026D4145C00095CB0 /* Sources */,
 				27623D6126D4145C00095CB0 /* Frameworks */,
 				27623D6226D4145C00095CB0 /* Resources */,
+				F79DF32772C3F543A613A98B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27623D9126D4145D00095CB0 /* Build configuration list for PBXNativeTarget "Push2TalkTests" */;
 			buildPhases = (
+				B32E10214332F3A6E81FD8B4 /* [CP] Check Pods Manifest.lock */,
 				27623D7626D4145D00095CB0 /* Sources */,
 				27623D7726D4145D00095CB0 /* Frameworks */,
 				27623D7826D4145D00095CB0 /* Resources */,
@@ -176,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27623D9426D4145D00095CB0 /* Build configuration list for PBXNativeTarget "Push2TalkUITests" */;
 			buildPhases = (
+				9FAD60CBD08537956410952B /* [CP] Check Pods Manifest.lock */,
 				27623D8126D4145D00095CB0 /* Sources */,
 				27623D8226D4145D00095CB0 /* Frameworks */,
 				27623D8326D4145D00095CB0 /* Resources */,
+				A04B766F8C0E05A6E74C1B75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,17 +373,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82228FF2326FADD600D6952E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Push2Talk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAD60CBD08537956410952B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Push2Talk-Push2TalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A04B766F8C0E05A6E74C1B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push2Talk-Push2TalkUITests/Pods-Push2Talk-Push2TalkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push2Talk-Push2TalkUITests/Pods-Push2Talk-Push2TalkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Push2Talk-Push2TalkUITests/Pods-Push2Talk-Push2TalkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32E10214332F3A6E81FD8B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Push2TalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79DF32772C3F543A613A98B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push2Talk/Pods-Push2Talk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push2Talk/Pods-Push2Talk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Push2Talk/Pods-Push2Talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27623D6026D4145C00095CB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27623D6C26D4145C00095CB0 /* RootViewController.swift in Sources */,
 				27623D6826D4145C00095CB0 /* AppDelegate.swift in Sources */,
 				27623D6A26D4145C00095CB0 /* SceneDelegate.swift in Sources */,
-				1E90E3989A04ED4BCD1D2CA9 /* RootCoordinator.swift in Sources */,
-				1E90E8E155D7F02647EBCDC7 /* Window.swift in Sources */,
-				1E90E5465592D173E2955485 /* View.swift in Sources */,
+				1E90EFF3F21018947AA8BC57 /* ConnectionRelay.swift in Sources */,
+				1E90E7273EDDBFEBF2383A00 /* WebSocketConnector.swift in Sources */,
+				1E90EDD16943475CE314E0A0 /* IceCandidate.swift in Sources */,
+				1E90ED178E91574C617DC295 /* SessionDescription.swift in Sources */,
+				1E90ED4DD039B047BAFB8836 /* PeerConnection.swift in Sources */,
+				1E90EF29951607715101084C /* PeerConnecting.swift in Sources */,
+				1E90E78FB1E147DAE7B7D704 /* MessageReceiver.swift in Sources */,
+				1E90E62A09C6883988951389 /* Message.swift in Sources */,
+				1E90E1B35086E79D8B6CAAE2 /* MessageSender.swift in Sources */,
+				1E90EB3A19608C2277785CCC /* AudioSession.swift in Sources */,
+				1E90EDF39972D1974E210041 /* DataSession.swift in Sources */,
+				1E90E7CCE900C4C892E0AE2F /* RootCoordinator.swift in Sources */,
+				1E90E12D2027930A0C9FFE28 /* RootInteractor.swift in Sources */,
+				1E90E6B8FF0DC2A47C15228A /* RootViewController.swift in Sources */,
+				1E90E0FB929461FC87DE31F8 /* View.swift in Sources */,
+				1E90EA68BCA073E0175689FE /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +600,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -424,6 +655,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -433,17 +665,26 @@
 		};
 		27623D8F26D4145D00095CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5A7D4418DAD2B17F93F2E5 /* Pods-Push2Talk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47LVS8UB5Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleWebRTC/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = Push2Talk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.premiersoft.Push2Talk;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.premiersoft.lobo.Push2Talk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,17 +693,26 @@
 		};
 		27623D9026D4145D00095CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC32A1F903C2582DF0B918C /* Pods-Push2Talk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47LVS8UB5Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleWebRTC/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = Push2Talk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.premiersoft.Push2Talk;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.premiersoft.lobo.Push2Talk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,6 +721,7 @@
 		};
 		27623D9226D4145D00095CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A737A58D2637D4E412B0FE40 /* Pods-Push2TalkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +743,7 @@
 		};
 		27623D9326D4145D00095CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80DCCCDE99C9747F52708E5F /* Pods-Push2TalkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +765,7 @@
 		};
 		27623D9526D4145D00095CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EAE2F8C79B3CB995B0F141A /* Pods-Push2Talk-Push2TalkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +785,7 @@
 		};
 		27623D9626D4145D00095CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D24D631A9ECBCBC13D8CB1 /* Pods-Push2Talk-Push2TalkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

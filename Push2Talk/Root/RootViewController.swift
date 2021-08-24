@@ -7,7 +7,9 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+final class RootViewController: UIViewController {
+
+    let useCase: RootUseCase
 
     let textField: UITextField = {
         let textField = UITextField()
@@ -27,7 +29,8 @@ class RootViewController: UIViewController {
         return button
     }()
 
-    required init() {
+    required init(useCase: RootUseCase) {
+        self.useCase = useCase
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -42,6 +45,8 @@ class RootViewController: UIViewController {
 
         setupSubviews()
         setupLayout()
+
+        useCase.startConnection()
     }
 
     override func viewWillLayoutSubviews() {
@@ -49,6 +54,12 @@ class RootViewController: UIViewController {
 
         pushToTalkControl.layoutIfNeeded()
         pushToTalkControl.layer.cornerRadius = pushToTalkControl.frame.width / 2
+        pushToTalkControl.addTarget(self, action: #selector(didTapPushToTalk(sender:)), for: .touchUpInside)
+    }
+
+    @objc
+    private func didTapPushToTalk(sender: UIButton) {
+        useCase.startAudioSession(sender: textField.text ?? "Unknown")
     }
 
     private func setupSubviews() {
@@ -71,4 +82,3 @@ class RootViewController: UIViewController {
     }
 
 }
-
