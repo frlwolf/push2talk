@@ -7,18 +7,16 @@ import Foundation
 final class RootCoordinator {
 
     func start(window: Window) {
-        let audioSession = AudioSession()
         let peerConnection = PeerConnection()
 
         let socket = WebSocketConnector()
-        let messageReceiver = MessageReceiver(connection: socket)
-        let messageSender = MessageSender(connection: socket)
+        let messageReceiver = SignalReceiver(connection: socket)
+        let messageSender = SignalSender(connection: socket)
 
         let interactor = RootInteractor(
-                audioSession: audioSession,
                 peerConnection: peerConnection,
-                messageReceiver: messageReceiver,
-                messageSender: messageSender
+                signalReceiver: messageReceiver,
+                signalSender: messageSender
         )
 
         let viewController = RootViewController(useCase: interactor)

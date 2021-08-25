@@ -4,12 +4,12 @@
 
 import Foundation
 
-enum Message {
+enum Signal {
     case sessionDescription(SessionDescription)
     case iceCandidate(IceCandidate)
 }
 
-extension Message: Codable {
+extension Signal: Codable {
 
     enum CodingKeys: String, CodingKey {
         case type, payload

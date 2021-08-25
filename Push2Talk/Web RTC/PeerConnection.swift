@@ -3,7 +3,7 @@
 //
 
 import Foundation
-import Combine
+import AVFAudio
 import WebRTC
 
 
@@ -22,6 +22,7 @@ final class PeerConnection: NSObject {
         return RTCPeerConnectionFactory(encoderFactory: videoEncoderFactory, decoderFactory: videoDecoderFactory)
     }()
 
+    private let audioQueue = DispatchQueue(label: "audioSessionConfig")
     private var iceCandidateGeneratedHandler: ((IceCandidate) -> Void)?
     private let peerConnection: RTCPeerConnection
 
@@ -39,15 +40,32 @@ final class PeerConnection: NSObject {
 
         peerConnection.delegate = self
 
-        configureAudio()
+        configureAudioSession()
+        configureAudioTrack()
     }
 
-    private func configureAudio() {
+    private func configureAudioTrack() {
         let audioConstrains = RTCMediaConstraints(mandatoryConstraints: nil, optionalConstraints: nil)
         let audioSource = Self.factory.audioSource(with: audioConstrains)
         let audioTrack = Self.factory.audioTrack(with: audioSource, trackId: "audio0")
 
         peerConnection.add(audioTrack, streamIds: ["Stream"])
+    }
+
+    private func configureAudioSession() {
+        audioQueue.async {
+            let audioSession = RTCAudioSession.sharedInstance()
+            audioSession.lockForConfiguration()
+            do {
+                try audioSession.setCategory(AVAudioSession.Category.playAndRecord.rawValue)
+                try audioSession.setMode(AVAudioSession.Mode.voiceChat.rawValue)
+                try audioSession.overrideOutputAudioPort(.speaker) // This forces the output to the speaker
+                try audioSession.setActive(true)
+            } catch {
+                debugPrint("Error while setting up Audio Session: \(error)")
+            }
+            audioSession.unlockForConfiguration()
+        }
     }
 
 }
@@ -61,7 +79,7 @@ extension PeerConnection: PeerConnecting {
             if let sdp = sdp {
                 peerConnection.setLocalDescription(sdp) { error in
                     if let error = error {
-                        debugPrint("Error while creating a connection offer: (\(error))")
+                        debugPrint("Error while setting the local description: (\(error))")
                         completion(.failure(error))
                     }
                     debugPrint("Did create a connection offer")
@@ -83,7 +101,7 @@ extension PeerConnection: PeerConnecting {
             if let sdp = sdp {
                 peerConnection.setLocalDescription(sdp) { error in
                     if let error = error {
-                        debugPrint("Error while creating a connection answer: (\(error))")
+                        debugPrint("Error while setting the local description: (\(error))")
                         completion(.failure(error))
                     }
                     debugPrint("Did create a connection answer")

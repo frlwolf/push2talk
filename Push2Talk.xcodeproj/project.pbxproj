@@ -9,20 +9,18 @@
 /* Begin PBXBuildFile section */
 		1E90E0FB929461FC87DE31F8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EBB2C164A390CF4AF3A1 /* View.swift */; };
 		1E90E12D2027930A0C9FFE28 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EA634B9E2E55A0FD9745 /* RootInteractor.swift */; };
-		1E90E1B35086E79D8B6CAAE2 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB9C09473455029B8A93 /* MessageSender.swift */; };
-		1E90E62A09C6883988951389 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EEAB03422F519DF6E945 /* Message.swift */; };
+		1E90E1B35086E79D8B6CAAE2 /* SignalSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB9C09473455029B8A93 /* SignalSender.swift */; };
+		1E90E62A09C6883988951389 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EEAB03422F519DF6E945 /* Signal.swift */; };
 		1E90E6B8FF0DC2A47C15228A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EC5386F329F0B8F14C48 /* RootViewController.swift */; };
 		1E90E7273EDDBFEBF2383A00 /* WebSocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */; };
-		1E90E78FB1E147DAE7B7D704 /* MessageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */; };
+		1E90E78FB1E147DAE7B7D704 /* SignalReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EF97FE8110F45EA0FFF5 /* SignalReceiver.swift */; };
 		1E90E7CCE900C4C892E0AE2F /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB077F3F13DD43D0D542 /* RootCoordinator.swift */; };
 		1E90EA68BCA073E0175689FE /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E2E79430A32E71AB1EB6 /* Window.swift */; };
-		1E90EB3A19608C2277785CCC /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EDECDD710D00F199DFC1 /* AudioSession.swift */; };
 		1E90ED178E91574C617DC295 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E5D9594E219B62024647 /* SessionDescription.swift */; };
 		1E90ED4DD039B047BAFB8836 /* PeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */; };
 		1E90EDD16943475CE314E0A0 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED72C993EF7C8A95E7D0 /* IceCandidate.swift */; };
-		1E90EDF39972D1974E210041 /* DataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E311443D906A8D0ADB56 /* DataSession.swift */; };
 		1E90EF29951607715101084C /* PeerConnecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */; };
-		1E90EFF3F21018947AA8BC57 /* ConnectionRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */; };
+		1E90EFF3F21018947AA8BC57 /* SingnalingRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED2E7CFA9E2214A42D1E /* SingnalingRelay.swift */; };
 		27623D6826D4145C00095CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D6726D4145C00095CB0 /* AppDelegate.swift */; };
 		27623D6A26D4145C00095CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27623D6926D4145C00095CB0 /* SceneDelegate.swift */; };
 		27623D7126D4145D00095CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27623D7026D4145D00095CB0 /* Assets.xcassets */; };
@@ -57,20 +55,18 @@
 		0F5A7D4418DAD2B17F93F2E5 /* Pods-Push2Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push2Talk.debug.xcconfig"; path = "Target Support Files/Pods-Push2Talk/Pods-Push2Talk.debug.xcconfig"; sourceTree = "<group>"; };
 		1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConnecting.swift; sourceTree = "<group>"; };
 		1E90E2E79430A32E71AB1EB6 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
-		1E90E311443D906A8D0ADB56 /* DataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSession.swift; sourceTree = "<group>"; };
 		1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnector.swift; sourceTree = "<group>"; };
 		1E90E5D9594E219B62024647 /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
 		1E90EA634B9E2E55A0FD9745 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		1E90EB077F3F13DD43D0D542 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		1E90EB9C09473455029B8A93 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		1E90EB9C09473455029B8A93 /* SignalSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalSender.swift; sourceTree = "<group>"; };
 		1E90EBB2C164A390CF4AF3A1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConnection.swift; sourceTree = "<group>"; };
 		1E90EC5386F329F0B8F14C48 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRelay.swift; sourceTree = "<group>"; };
+		1E90ED2E7CFA9E2214A42D1E /* SingnalingRelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingnalingRelay.swift; sourceTree = "<group>"; };
 		1E90ED72C993EF7C8A95E7D0 /* IceCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
-		1E90EDECDD710D00F199DFC1 /* AudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSession.swift; sourceTree = "<group>"; };
-		1E90EEAB03422F519DF6E945 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReceiver.swift; sourceTree = "<group>"; };
+		1E90EEAB03422F519DF6E945 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		1E90EF97FE8110F45EA0FFF5 /* SignalReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalReceiver.swift; sourceTree = "<group>"; };
 		27623D6426D4145C00095CB0 /* Push2Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push2Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27623D6726D4145C00095CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27623D6926D4145C00095CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,16 +135,16 @@
 			path = "Auxiliary Protocols";
 			sourceTree = "<group>";
 		};
-		1E90EBF2784A9C00EDB1FAF6 /* Messaging */ = {
+		1E90EBF2784A9C00EDB1FAF6 /* Signaling */ = {
 			isa = PBXGroup;
 			children = (
-				1E90ED2E7CFA9E2214A42D1E /* ConnectionRelay.swift */,
+				1E90ED2E7CFA9E2214A42D1E /* SingnalingRelay.swift */,
 				1E90E53C8CBF2C15C369770C /* WebSocketConnector.swift */,
-				1E90EF97FE8110F45EA0FFF5 /* MessageReceiver.swift */,
-				1E90EEAB03422F519DF6E945 /* Message.swift */,
-				1E90EB9C09473455029B8A93 /* MessageSender.swift */,
+				1E90EF97FE8110F45EA0FFF5 /* SignalReceiver.swift */,
+				1E90EEAB03422F519DF6E945 /* Signal.swift */,
+				1E90EB9C09473455029B8A93 /* SignalSender.swift */,
 			);
-			path = Messaging;
+			path = Signaling;
 			sourceTree = "<group>";
 		};
 		1E90EC9625EB97C6278112E7 /* Web RTC */ = {
@@ -158,8 +154,6 @@
 				1E90E5D9594E219B62024647 /* SessionDescription.swift */,
 				1E90EBD52F4BB22ACB05846F /* PeerConnection.swift */,
 				1E90E08B0EC7D63DAA9B663A /* PeerConnecting.swift */,
-				1E90EDECDD710D00F199DFC1 /* AudioSession.swift */,
-				1E90E311443D906A8D0ADB56 /* DataSession.swift */,
 			);
 			path = "Web RTC";
 			sourceTree = "<group>";
@@ -194,7 +188,7 @@
 				27623D7026D4145D00095CB0 /* Assets.xcassets */,
 				27623D7226D4145D00095CB0 /* LaunchScreen.storyboard */,
 				27623D7526D4145D00095CB0 /* Info.plist */,
-				1E90EBF2784A9C00EDB1FAF6 /* Messaging */,
+				1E90EBF2784A9C00EDB1FAF6 /* Signaling */,
 				1E90EC9625EB97C6278112E7 /* Web RTC */,
 				1E90E3EAE4B8A24DEFD7E60E /* Root */,
 				1E90E7B4011C8BB67E0498E5 /* Auxiliary Protocols */,
@@ -483,17 +477,15 @@
 			files = (
 				27623D6826D4145C00095CB0 /* AppDelegate.swift in Sources */,
 				27623D6A26D4145C00095CB0 /* SceneDelegate.swift in Sources */,
-				1E90EFF3F21018947AA8BC57 /* ConnectionRelay.swift in Sources */,
+				1E90EFF3F21018947AA8BC57 /* SingnalingRelay.swift in Sources */,
 				1E90E7273EDDBFEBF2383A00 /* WebSocketConnector.swift in Sources */,
 				1E90EDD16943475CE314E0A0 /* IceCandidate.swift in Sources */,
 				1E90ED178E91574C617DC295 /* SessionDescription.swift in Sources */,
 				1E90ED4DD039B047BAFB8836 /* PeerConnection.swift in Sources */,
 				1E90EF29951607715101084C /* PeerConnecting.swift in Sources */,
-				1E90E78FB1E147DAE7B7D704 /* MessageReceiver.swift in Sources */,
-				1E90E62A09C6883988951389 /* Message.swift in Sources */,
-				1E90E1B35086E79D8B6CAAE2 /* MessageSender.swift in Sources */,
-				1E90EB3A19608C2277785CCC /* AudioSession.swift in Sources */,
-				1E90EDF39972D1974E210041 /* DataSession.swift in Sources */,
+				1E90E78FB1E147DAE7B7D704 /* SignalReceiver.swift in Sources */,
+				1E90E62A09C6883988951389 /* Signal.swift in Sources */,
+				1E90E1B35086E79D8B6CAAE2 /* SignalSender.swift in Sources */,
 				1E90E7CCE900C4C892E0AE2F /* RootCoordinator.swift in Sources */,
 				1E90E12D2027930A0C9FFE28 /* RootInteractor.swift in Sources */,
 				1E90E6B8FF0DC2A47C15228A /* RootViewController.swift in Sources */,

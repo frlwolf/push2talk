@@ -5,7 +5,7 @@
 import Foundation
 import Network
 
-final class WebSocketConnector: NSObject, ConnectionRelay {
+final class WebSocketConnector: NSObject, SignalingRelay {
 
     private var urlSession: URLSession!
     private var socketTask: URLSessionWebSocketTask?
@@ -14,7 +14,7 @@ final class WebSocketConnector: NSObject, ConnectionRelay {
         socketTask?.cancel()
     }
 
-    init(url: URL = URL(string: "ws://169.254.97.113:8080")!) {
+    init(url: URL = URL(string: "ws://169.254.4.53:8080")!) {
         super.init()
 
         urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)

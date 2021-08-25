@@ -14,19 +14,16 @@ protocol RootUseCase: AnyObject {
 
 final class RootInteractor {
 
-    let audioSession: AudioStream
     let peerConnection: PeerConnecting
-    let messageReceiver: MessageReceivingGateway
-    let messageSender: MessageSendingGateway
+    let signalReceiver: SignalReceivingGateway
+    let signalSender: SignalSendingGateway
 
-    init(audioSession: AudioStream,
-         peerConnection: PeerConnecting,
-         messageReceiver: MessageReceivingGateway,
-         messageSender: MessageSendingGateway) {
-        self.audioSession = audioSession
+    init(peerConnection: PeerConnecting,
+         signalReceiver: SignalReceivingGateway,
+         signalSender: SignalSendingGateway) {
         self.peerConnection = peerConnection
-        self.messageReceiver = messageReceiver
-        self.messageSender = messageSender
+        self.signalReceiver = signalReceiver
+        self.signalSender = signalSender
     }
 
 }
@@ -34,8 +31,8 @@ final class RootInteractor {
 extension RootInteractor: RootUseCase {
 
     func startConnection() {
-        messageReceiver.startReceiving { [weak peerConnection, messageSender] message in
-            switch message {
+        signalReceiver.startReceiving { [weak peerConnection, signalSender] signal in
+            switch signal {
             case .iceCandidate(let candidate):
                 peerConnection?.add(remoteCandidate: candidate)
             case .sessionDescription(let sdp):
@@ -44,38 +41,23 @@ extension RootInteractor: RootUseCase {
                     guard case .success(let sessionDescription) = result else {
                         return
                     }
-                    do {
-                        try messageSender.send(message: .sessionDescription(sessionDescription))
-                    } catch {
-                        debugPrint("Error while trying to send a message: \(error)")
-                    }
+                    try? signalSender.send(signal: .sessionDescription(sessionDescription))
                 }
             }
         }
 
-        peerConnection.didGenerateIceCandidates { [messageSender] candidate in
-            do {
-                try messageSender.send(message: .iceCandidate(candidate))
-            } catch {
-                debugPrint("Error while trying to send iceCandidate: \(error)")
-            }
+        peerConnection.didGenerateIceCandidates { [signalSender] candidate in
+            try? signalSender.send(signal: .iceCandidate(candidate))
         }
     }
 
     func startAudioSession(sender: String) {
-        peerConnection.offer(media: .audio) { [messageSender] result in
+        peerConnection.offer(media: .audio) { [signalSender] result in
             guard case .success(let sessionDescription) = result else {
                 return
             }
-
-            do {
-                try messageSender.send(message: .sessionDescription(sessionDescription))
-            } catch {
-                debugPrint("Error while trying to send offer sdp: \(error)")
-            }
+            try? signalSender.send(signal: .sessionDescription(sessionDescription))
         }
-
-        audioSession.startStreaming()
     }
 
 }

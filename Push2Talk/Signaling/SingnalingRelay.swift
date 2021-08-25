@@ -4,7 +4,7 @@
 
 import Foundation
 
-protocol ConnectionRelay {
+protocol SignalingRelay {
 
     func receive(handler: @escaping (Data) -> Void)
 
