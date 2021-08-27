@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import WebRTC
 
 final class RootCoordinator {
 

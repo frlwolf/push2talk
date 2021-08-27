@@ -14,7 +14,7 @@ final class WebSocketConnector: NSObject, SignalingRelay {
         socketTask?.cancel()
     }
 
-    init(url: URL = URL(string: "ws://169.254.4.53:8080")!) {
+    init(url: URL = URL(string: "ws://192.168.12.110:8080")!) {
         super.init()
 
         urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)

@@ -107,6 +107,11 @@ extension PeerConnection: PeerConnecting {
                     debugPrint("Did create a connection answer")
                     completion(.success(SessionDescription(from: sdp)))
                 }
+                peerConnection.transceivers.forEach { transceiver in
+
+
+                    transceiver.sender.parameters.codecs = []
+                }
             } else if let error = error {
                 debugPrint("Error while creating a connection answer: (\(error))")
                 completion(.failure(error))
@@ -192,5 +197,19 @@ extension Media {
 
         return RTCMediaConstraints(mandatoryConstraints: constraints, optionalConstraints: nil)
     }
+
+}
+
+private class DefaultAudioCodecParameters: RTCRtpCodecParameters {
+
+    override var name: String { kRTCOpusCodecName }
+
+    override var kind: String { kRTCMediaStreamTrackKindAudio }
+
+    override var clockRate: NSNumber? { 16000 }
+
+    override var numChannels: NSNumber? { 1 }
+
+    override var parameters: [AnyHashable: Any] { [:] }
 
 }
