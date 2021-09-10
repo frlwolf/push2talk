@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class RootViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    let useCase: RootUseCase
+    let useCase: UseCase
 
     let textField: UITextField = {
         let textField = UITextField()
@@ -29,7 +29,7 @@ final class RootViewController: UIViewController {
         return button
     }()
 
-    required init(useCase: RootUseCase) {
+    required init(useCase: UseCase) {
         self.useCase = useCase
         super.init(nibName: nil, bundle: nil)
     }
