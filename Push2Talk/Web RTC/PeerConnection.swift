@@ -6,7 +6,6 @@ import Foundation
 import AVFAudio
 import WebRTC
 
-
 final class PeerConnection: NSObject {
 
     private static let defaultStunServers = ["stun:stun.l.google.com:19302",
@@ -23,7 +22,7 @@ final class PeerConnection: NSObject {
     }()
 
     private let audioQueue = DispatchQueue(label: "audioSessionConfig")
-    private var iceCandidateGeneratedHandler: ((IceCandidate) -> Void)?
+    private var iceCandidateFoundHandler: ((IceCandidate) -> Void)?
     private let peerConnection: RTCPeerConnection
 
     init(servers serverStrings: [String] = defaultStunServers) {
@@ -121,8 +120,8 @@ extension PeerConnection: PeerConnecting {
         }
     }
 
-    func didGenerateIceCandidates(handler: @escaping (IceCandidate) -> ()) {
-        iceCandidateGeneratedHandler = handler
+    func iceCandidatesFound(handler: @escaping (IceCandidate) -> ()) {
+        iceCandidateFoundHandler = handler
     }
 
     func set(remoteSession: SessionDescription, completion: ((Result<Void, Error>) -> Void)?) {
@@ -169,7 +168,7 @@ extension PeerConnection: RTCPeerConnectionDelegate {
 
     func peerConnection(_ peerConnection: RTCPeerConnection, didGenerate candidate: RTCIceCandidate) {
         debugPrint("Did find an ICE candidate")
-        iceCandidateGeneratedHandler?(IceCandidate(from: candidate))
+        iceCandidateFoundHandler?(IceCandidate(from: candidate))
     }
 
     func peerConnection(_ peerConnection: RTCPeerConnection, didRemove candidates: [RTCIceCandidate]) {

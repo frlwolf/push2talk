@@ -4,7 +4,7 @@
 
 import Foundation
 
-protocol RootUseCase: AnyObject {
+protocol UseCase: AnyObject {
 
     func startConnection()
 
@@ -12,7 +12,7 @@ protocol RootUseCase: AnyObject {
 
 }
 
-final class RootInteractor {
+final class Interactor {
 
     let peerConnection: PeerConnecting
     let signalReceiver: SignalReceivingGateway
@@ -28,7 +28,7 @@ final class RootInteractor {
 
 }
 
-extension RootInteractor: RootUseCase {
+extension Interactor: UseCase {
 
     func startConnection() {
         signalReceiver.startReceiving { [weak peerConnection, signalSender] signal in
@@ -46,7 +46,7 @@ extension RootInteractor: RootUseCase {
             }
         }
 
-        peerConnection.didGenerateIceCandidates { [signalSender] candidate in
+        peerConnection.iceCandidatesFound { [signalSender] candidate in
             try? signalSender.send(signal: .iceCandidate(candidate))
         }
     }

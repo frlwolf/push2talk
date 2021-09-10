@@ -18,7 +18,7 @@ protocol PeerConnecting: AnyObject {
 
     func answer(media: Media, completion: @escaping (Result<SessionDescription, Error>) -> Void)
 
-    func didGenerateIceCandidates(handler: @escaping (IceCandidate) -> Void)
+    func iceCandidatesFound(handler: @escaping (IceCandidate) -> Void)
 
     func set(remoteSession: SessionDescription, completion: ((Result<Void, Error>) -> Void)?)
 
